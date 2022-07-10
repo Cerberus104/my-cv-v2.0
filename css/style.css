@@ -1,0 +1,435 @@
+
+* {
+font-family: 'Hind', sans-serif;
+
+}
+body._lock{
+    overflow: hidden;
+
+}
+.page {
+    flex-direction: column;
+
+overflow: hidden;
+}
+.wrapper {
+    background: url(/img/DSC_0266.JPEG) no-repeat;
+    background-size: cover;
+height: 100vh;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.header__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+}
+.logo img {
+    width: 35px;
+    height: 35px;
+}
+.nav__menu {
+    margin: 20px 0 20px 0;
+    display: flex;
+}
+.nav__menu_link {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    line-height: 55px;
+    padding: 20px;
+    transition-duration: .3s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.7,1,.7,1);
+    text-shadow: 4px 2px 4px rgb(23, 20, 20);
+    z-index: 2;
+}
+.nav__menu_link:hover {
+    background-color: rgb(253, 239, 243);
+    border-radius: 25px;
+    opacity: 0.9;
+}
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.title {
+    text-align: right;
+    margin-top: 70px;
+    font-size: 70px;
+    color: rgb(252, 252, 252);
+    line-height: 1;
+    padding-bottom: 50px;
+    text-shadow: 4px 4px 4px rgb(18, 16, 16);
+}
+.position {
+    font-size: 25px;
+    color: rgb(252, 252, 252);
+    position: relative;
+    text-align: right;
+    text-shadow: 4px 4px 4px rgb(18, 16, 16);
+}
+.position::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: -99px;
+    left:  31px;
+    height: 10px;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(135deg);
+    border-radius: 50%;
+    z-index: 2;
+    opacity: 0.4;
+}
+
+.home__social__menu {
+    margin-top: 60px;
+    display: flex;
+}
+.home__social_item {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition-duration: .3s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.7,1,.7,1);
+    border-radius: 20px;
+    padding: 30px;
+}
+.home__social_item:hover {
+    background-color: #fff;
+    color: black;
+}
+.home__social_item img {
+    width: 30px;
+    height: 30px;
+}
+
+.about {
+    margin-top: 100px;
+}
+.intro {
+    font-weight: 700;
+    color: #515769;
+    line-height: 1.8;
+    width: 600px;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+.about__me_text {
+    font-size: 15px;
+    font-weight: 400;
+    color: #a6a7aa;
+    margin-bottom: 15px;
+}
+.about__body {
+    display: flex;
+    justify-content: space-between;
+}
+.progress-box {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.progress__body {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 700;
+    color: #464141;
+    margin-bottom: 15px;
+}
+.progress {
+    margin: 15px 0 15px 0;
+    height: 4px;
+    width: 100%;
+    background-color: #adadad;
+    border-radius: 10px;
+}
+.progress::before {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 100%;
+    background-color: rgb(140, 27, 66);
+    border-radius: 20px;
+}
+.js::before {
+    content: '';
+    display: block;
+    width: 40%;
+    height: 100%;
+    background-color: rgb(140, 27, 66);
+    border-radius: 20px;
+}
+.react::before {
+    content: '';
+    display: block;
+    width: 20%;
+    height: 100%;
+    background-color: rgb(140, 27, 66);
+    border-radius: 20px;
+}
+.figma::before {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 100%;
+    background-color: rgb(140, 27, 66);
+    border-radius: 20px;
+}
+.education {
+    background-color: #fafafa;
+}
+.education__block {
+    display: flex;
+}
+.education_title{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    color: #515769;
+}
+
+.education__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.education_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 30px 30px 0px;
+    width: 230px;
+    height: 260px;
+    padding: 10px;
+}
+.education_card:hover {
+    background-color: #adadad;
+    transition-duration: .5s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.7,1,.7,1);
+    transform: scale(1.2);
+}
+.education_logo {
+    margin-top: 30px;
+}
+.name_curses {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+    color: #515769;
+    line-height: 1.4;
+    padding: 15px 0 15px 0;
+}
+.about_curses {
+    text-align: center;
+    color: #515769;
+    line-height: 1.2;
+}
+.work__block {
+    display: flex;
+}
+.allo_logo {
+    margin-top: 30px;
+    width: 120px;
+}
+.footer {
+    background-color: #fafafa;
+}
+
+.contact__block {
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact__card {
+    text-align: left;
+
+}
+.contacts {
+    color: #515769;
+}
+.card_text {
+    color: #515769;
+    font-weight: 700;
+    padding: 20px 0 20px 0;
+    font-size: 16px;
+}
+.card_info {
+    color: #515769;
+}
+.contacts_info {
+    margin-top: 15px;
+    color: #515769;
+    font-size: 12px;
+    text-align: right;
+}
+@media screen and (max-width: 767px) {
+
+    .container {
+        max-width: 767px;
+    }
+    .header__body {
+        max-height: 768px;
+
+    }
+    .wrapper {
+    background-position: 20%;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        height: 70vh;
+    }
+    .home__social {
+
+    }
+    .home__social_item {
+        background-color: #fafafa;
+    }
+
+    .title {
+        font-size: 45px;
+        padding-right: 10px;
+        margin-top: 25px;
+        padding-bottom: 10px;
+
+    }
+    .position{
+        margin-top: 5px;
+        font-style: 20px;
+        padding-right: 10px;
+    }
+    .position::after {
+        display: none;
+    }
+    .about__body {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px 0 10px;
+    }
+    .intro {
+        justify-content: flex-start;
+    }
+    .education__block {
+        display: block;
+    }
+    .education_title {
+        margin-top: 0;
+        padding-top: 20px;
+        width: auto;
+
+    }
+    .education_card {
+        margin: 0;
+    }
+    .work__block {
+        display: block;
+    }
+    .contact__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact__card:last-child {
+        margin-left: 45px;
+    }
+    .contacts_info {
+        margin-top: 10px;
+        font-size: 10px;
+        text-align: left;
+    }
+    .contact__block{
+        height: 300px;
+    }
+    .nav._active {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0, 0.9);
+        transition: left 0.3s ease 0s;
+        z-index: 10;
+    }
+    .nav__menu{
+        display: block;
+        width: 100px;
+        margin-right: 0;
+
+    }
+    body._touch .nav {
+        display: none;
+    }
+    body._touch .nav._active {
+    display: block;
+    }
+    .nav._active .nav__menu{
+        display: block;
+    }
+
+    .menu__icon {
+        z-index: 20;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+        margin-right: 15px;
+    }
+    .menu__icon span,
+    .menu__icon::after ,
+    .menu__icon::before {
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background: #fff;
+    }
+    .menu__icon::after ,
+    .menu__icon::before {
+        content: "";
+    }
+    .menu__icon::after{
+        top: 0;
+    }
+    .menu__icon::before {
+        bottom: 0;
+    }
+    .menu__icon span {
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+    .menu__icon._active span {
+        transform: scale(0) translate(0px, -50%);
+    }
+    .menu__icon._active::before{
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+    .menu__icon._active::after{
+        top: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+    }
