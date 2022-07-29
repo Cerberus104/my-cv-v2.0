@@ -26,6 +26,19 @@ body._lock{
     justify-content: flex-end;
     min-height: 70px;
 }
+body._touch .header__fix{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+body._touch .home_title {
+    padding-top: 70px;
+}
+
+
 .logo img {
     width: 35px;
     height: 35px;
@@ -225,6 +238,16 @@ body._lock{
     transition-timing-function: cubic-bezier(.7,1,.7,1);
     transform: scale(1.2);
 }
+body._touch .education_card:hover {
+    transform: none;
+    background-color: #fafafa
+
+}
+body._touch .work__block .education_card:hover{
+    transform: none;
+    background-color: #fff
+}
+
 .education_logo {
     margin-top: 30px;
 }
@@ -299,9 +322,6 @@ body._lock{
         justify-content: space-between;
 
         height: 70vh;
-    }
-    .home__social {
-
     }
     .home__social_item {
         background-color: #fafafa;
@@ -405,7 +425,9 @@ body._lock{
         height: 10%;
         width: 100%;
         transition: all 0.3s ease 0s;
-        background: #fff;
+        background: rgb(229, 229, 229);
+        box-shadow: 4px 4px 4px rgb(18, 16, 16);
+
     }
     .menu__icon::after ,
     .menu__icon::before {
